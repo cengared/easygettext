@@ -39,7 +39,7 @@ for (let file of files) {
 }
 
 // Output results
-const translationString = JSON.stringify(translationData);
+const translationString = JSON.stringify(translationData, null, 2);
 if (outputFile) {
   fs.writeFileSync(outputFile, translationString);
 } else {
